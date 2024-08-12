@@ -65,6 +65,7 @@ ol {
     font-size: 35px;
     font-weight: 900;
     max-width: 175px;
+    color: #194452;
 }
 
 .menu-block ul {
@@ -1032,6 +1033,238 @@ ol {
     color: #F5F5F5;
 }
 
+/* Страница категорий */
+
+.alter .header{
+    margin-bottom: 32px;
+}
+
+.alter .menu-inner{
+    padding-top: 32px;
+}
+
+.catalog-wrapper .catalog-start{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 130px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog-wrapper .catalog-inner h1{
+    font-size: 56px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.catalog-wrapper .line{
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.catalog-wrapper .bread{
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.catalog-wrapper .bread a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    transition: all .3s;
+}
+
+.catalog-wrapper .bread a:hover{
+    color: #FEE300;
+    transition: all .3s;
+}
+
+.catalog-wrapper .bread a::after{
+    content: url(../img/catalog/bread_arrow.svg);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.catalog-wrapper .bread a:last-child::after{
+    display: none;
+}
+
+.catalog-wrapper .catalog-rubric{
+    margin-bottom: 70px;
+}
+
+.catalog-wrapper .rubric-inner{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-wrapper .rubric-card{
+    width: 33%;
+    max-width: 370px;
+    min-height: 403px;
+    max-height: 403px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+}
+
+.catalog-wrapper .rubric-card:hover{
+    box-shadow: 4px 4px 25px 0px #194452;
+    transition: all .3s;
+}
+
+.catalog-wrapper .rubric-card a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.catalog-wrapper .rubric-card h3{
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 327px;
+    padding-bottom: 40px;
+}
+
+/* Конец страницы категорий */
+
+/* Страница конкретной категории */
+
+.catalog-wrapper .current{
+    margin-bottom: 130px;
+}
+
+.catalog-wrapper .current-inner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.catalog-wrapper .current-card{
+    display: flex;
+    align-items: center;
+    border: 1px solid #194452;
+    padding: 20px 30px;
+    margin-bottom: 45px;
+    transition: all .3s;
+    box-shadow: 4px 4px 25px 0px #19445230;
+}
+
+.catalog-wrapper .current-card:last-child{
+    margin-bottom: 0;
+}
+
+.catalog-wrapper .current-card-banner{
+    max-width: 349px;
+    margin-right: 45px;
+    border: 1px solid #194452;
+}
+
+.catalog-wrapper .current-card-banner img{
+    width: 100%;
+}
+
+.catalog-wrapper .current-card-panel button{
+    width: 100%;
+    border: none;
+    background-color: #194452;
+    color: #fff;
+    padding: 10px 38px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    border-top: 1px solid #fff;
+}
+
+.catalog-wrapper .current-card-panel button:hover{
+    transition: all .3s;
+    background-color: #FEE300;
+    color: #202020;
+    border-color: #194452;
+}
+
+.catalog-wrapper .current-card-info h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 15px;
+    color: #202020;
+}
+
+.catalog-wrapper .current-card-info p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #515151;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #194452;
+    margin-bottom: 20px;
+}
+
+.catalog-wrapper .current-card-info p span{
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.catalog-wrapper .current-card-info ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.catalog-wrapper .current-card-info ul li{
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.catalog-wrapper .current-card-info a{
+    padding: 18px 50px;
+    border: 1px solid #194452;
+    display: block;
+    max-width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+
+.catalog-wrapper .current-card-info a:hover{
+    transition: all .3s;
+    border-color: #FEE300;
+    background-color: #FEE300;
+    color: #202020;
+}
+
+.catalog-wrapper .current-card-info a:hover .current-card{
+    transition: all .3s;
+    box-shadow: 4px 4px 25px 0px #194452;
+}
+
+/* Конец страницы конкретной категории */
+
 
 /* `xxl` применяется к устройствам x-large (большие рабочие столы, менее 1400 пикселей) */
 @media (max-width: 1399.98px) {
@@ -1615,6 +1848,89 @@ ol {
         padding: 15px 25px;
     }
 
+    /* Страница оборудования */
+
+    .catalog-wrapper .catalog-start{
+        margin-bottom: 50px;
+    }
+
+    .catalog-wrapper .catalog-inner h1{
+        font-size: 46px;
+    }
+
+    .catalog-wrapper .catalog-rubric{
+        margin-bottom: 50px;
+    }
+
+    .catalog-wrapper .rubric-inner{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .catalog-wrapper .rubric-card{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .catalog-wrapper .rubric-card:last-child{
+        margin-bottom: 0;
+    }
+
+    /* Конец страницы оборудования */
+
+    /* Страница конкретной категории */
+
+    .catalog-wrapper .bread{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .catalog-wrapper .catalog-inner h1{
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .catalog-wrapper .current{
+        margin-bottom: 50px;
+    }
+
+    .catalog-wrapper .current-inner{
+        max-width: 100%;
+    }
+
+    .catalog-wrapper .current-card{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .catalog-wrapper .current-card-banner{
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 35px;
+        border: none;
+    }
+
+    .catalog-wrapper .current-card-info h2{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .catalog-wrapper .current-card-info ul{
+        flex-direction: column;
+    }
+
+    .catalog-wrapper .current-card-info ul li{
+        width: 100%;
+    }
+
+    .catalog-wrapper .current-card-info a{
+        max-width: 100%;
+        text-align: center;
+    }
 
 
+    /* Конец страницы конкретной категории */
 }
