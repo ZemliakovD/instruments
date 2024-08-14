@@ -106,3 +106,31 @@ $(function () {
     });
 
 });
+
+    // Получаем все карточки с классом "card"
+    const cards = document.querySelectorAll('.rubric-card');
+
+    // Преобразуем NodeList в массив для удобства работы
+    const cardsArray = Array.from(cards);
+    
+    // Сортируем массив карточек по тексту в заголовке h3 (по умолчанию в алфавитном порядке)
+    cardsArray.sort((a, b) => {
+        const titleA = a.querySelector('h3').textContent.trim().toUpperCase();
+        const titleB = b.querySelector('h3').textContent.trim().toUpperCase();
+        if (titleA < titleB) {
+            return -1;
+        }
+        if (titleA > titleB) {
+            return 1;
+        }
+        return 0;
+    });
+    
+    // Очищаем родительский контейнер (предположим, что карточки находятся в элементе с id="card-container")
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.innerHTML = '';
+    
+    // Вставляем отсортированные карточки обратно в контейнер
+    cardsArray.forEach(card => {
+        cardContainer.appendChild(card);
+    });
