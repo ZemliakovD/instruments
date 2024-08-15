@@ -1107,14 +1107,14 @@ ol {
 }
 
 .catalog-wrapper .rubric-card{
-    width: 25%;
-    max-width: 23%;
-    min-height: 250px;
-    max-height: 250px;
+    width: 15%;
+    max-width: 15%;
+    min-height: 175px;
+    max-height: 175px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     cursor: pointer;
     transition: all .3s;
     position: relative;
@@ -1135,12 +1135,12 @@ ol {
 }
 
 .catalog-wrapper .rubric-card h3{
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
     color: #fff;
     text-align: center;
     font-weight: 800;
-    padding-top: 190px;
+    padding-top: 120px;
     padding-bottom: 40px;
 }
 
